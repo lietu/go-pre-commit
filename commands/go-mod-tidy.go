@@ -9,7 +9,7 @@ var goModTidy = &cobra.Command{
 	Short: "Prune no-longer required commits from go.mod",
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
-		runTool("go", []string{"mod", "tidy"})
+		runTool("go", append([]string{"mod", "tidy"}, args...))
 	},
 }
 
