@@ -37,3 +37,9 @@ repos:
         files: '\.go$'
         language: system
         description: Check your Go code with golint
+      - id: go-mod-tidy
+        name: go-mod-tidy
+        entry: go-pre-commit go-mod-tidy
+        files: ''
+        language: system
+        description: Prune no-longer required commits from go.mod
