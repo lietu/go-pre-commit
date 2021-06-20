@@ -37,3 +37,8 @@ Also you likely don't want to mix `go-fmt-goimports` with `gofumports` and `gofu
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flietu%2Fgo-pre-commit.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flietu%2Fgo-pre-commit?ref=badge_large)
+
+
+# Financial support
+
+This project has been made possible thanks to [Cocreators](https://cocreators.ee) and [Lietu](https://lietu.net). You can help us continue our open source work by supporting us on [Buy me a coffee](https://www.buymeacoffee.com/cocreators).
