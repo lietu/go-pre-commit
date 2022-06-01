@@ -11,7 +11,7 @@ var gofumpt = &cobra.Command{
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		ensureInstalled("gofumpt", "mvdan.cc/gofumpt")
-		runTool("gofumpt", append([]string{"-s", "-l", "-w"}, args...))
+		runTool("gofumpt", append([]string{"-l", "-w"}, args...))
 	},
 }
 

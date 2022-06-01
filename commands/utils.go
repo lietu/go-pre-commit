@@ -23,10 +23,10 @@ func runTool(cmd string, args []string) {
 func ensureInstalled(bin string, pkg string) {
 	_, err := exec.LookPath(bin)
 	if err != nil {
-		fmt.Printf("%s not installed, installing from %s\n", bin, pkg)
-		err = exec.Command("go", "get", pkg).Run()
+		fmt.Printf("%s not installed, installing from %s@latest\n", bin, pkg)
+		err = exec.Command("go", "install", fmt.Sprintf("%s@latest", pkg)).Run()
 		if err != nil {
-			fmt.Printf("Failed to install %s via go get %s\n", bin, pkg)
+			fmt.Printf("Failed to install %s via go install %s@latest\n", bin, pkg)
 			panic(err)
 		}
 	}

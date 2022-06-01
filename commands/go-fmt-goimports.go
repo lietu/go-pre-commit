@@ -10,7 +10,7 @@ var goFmtGoimports = &cobra.Command{
 	Long:  ``,
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		ensureInstalled("goimports", "golang.org/x/tools/commands/goimports")
+		ensureInstalled("goimports", "golang.org/x/tools/cmd/goimports")
 		runTool("goimports", append([]string{"-l", "-w"}, args...))
 	},
 }

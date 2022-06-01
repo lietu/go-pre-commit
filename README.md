@@ -10,7 +10,7 @@ This should work on Windows, Linux, Mac, and basically anything Golang does (tho
 
 ## Using the hooks
 
-You need to first install the binary from here, `go get -u github.com/lietu/go-pre-commit`
+You need to first install the binary from here, `go install github.com/lietu/go-pre-commit@latest`
 
 You can add these to your project's `.pre-commit-config.yaml`:
 
@@ -22,7 +22,6 @@ You can add these to your project's `.pre-commit-config.yaml`:
     - id: go-fmt-goimports
     - id: go-test
     - id: go-vet
-    - id: gofumports
     - id: gofumpt
     - id: golangci-lint
     - id: golint
@@ -30,12 +29,13 @@ You can add these to your project's `.pre-commit-config.yaml`:
     - id: go-mod-tidy
 ```
 
-If you want to use [golangci-lint](https://github.com/golangci/golangci-lint#install) you should first follow their installation guide. The other tools are automatically `go get`'d if they are not yet installed. If you choose to use `golangci-lint`, you don't need `errcheck`, `go-vet`, and `staticcheck` separately, as they are included by default.
+If you want to use [golangci-lint](https://github.com/golangci/golangci-lint#install) you should first follow their installation guide. The other tools are automatically `go install`'d if they are not yet installed. If you choose to use `golangci-lint`, you don't need `errcheck`, `go-vet`, and `staticcheck` separately, as they are included by default.
 
-Also you likely don't want to mix `go-fmt-goimports` with `gofumports` and `gofumpt` as they are just stricter variants of the same tools.
+Also you likely don't want to mix `go-fmt-goimports` with `gofumpt` as it is just a stricter variant of the same tools.
 
 
 ## License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flietu%2Fgo-pre-commit.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flietu%2Fgo-pre-commit?ref=badge_large)
 
 

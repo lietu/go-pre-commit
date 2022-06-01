@@ -10,7 +10,7 @@ var staticcheck = &cobra.Command{
 	Long:  ``,
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		ensureInstalled("staticcheck", "honnef.co/go/tools/commands/staticcheck")
+		ensureInstalled("staticcheck", "honnef.co/go/tools/cmd/staticcheck")
 		runTool("staticcheck", pkgNames(dirNames(args)))
 	},
 }
