@@ -1,4 +1,4 @@
-module github.com/lietu/go-pre-commit
+module github.com/dotX12/go-pre-commit
 
 go 1.13
 
