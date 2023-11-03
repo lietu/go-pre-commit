@@ -16,7 +16,7 @@ You can add these to your project's `.pre-commit-config.yaml`:
 
 ```yaml
 - repo: https://github.com/lietu/go-pre-commit
-  rev: master
+  rev: v0.1.0
   hooks:
     - id: errcheck
     - id: go-fmt-goimports
