@@ -10,7 +10,7 @@ var golangciLint = &cobra.Command{
 	Long:  ``,
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		runTool("golangci-lint", append([]string{"run"}, pkgNames(dirNames((args)))...))
+		runTool("golangci-lint", append([]string{"run"}, pkgNames(dirNames(args))...))
 	},
 }
 
